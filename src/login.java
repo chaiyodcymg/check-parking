@@ -50,8 +50,8 @@ public class login {
 	public static Connection ConnectDB(){
         try{
             Class.forName("com.mysql.jdbc.Driver"); //driver
-            String url="jdbc:mysql://localhost/esp_8266";
-            Connection connect = DriverManager.getConnection(url,"admin","packkcap1669");
+            String url="jdbc:mysql://localhost/your_name_db";
+            Connection connect = DriverManager.getConnection(url,"","");
             System.out.println("Connected Successfully! ");
             return connect;
         } catch(Exception e){
